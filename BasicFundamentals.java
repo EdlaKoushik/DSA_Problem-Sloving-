@@ -375,7 +375,160 @@ public class BasicFundamentals {
     // --- Koushik Section (personal comments and extra logic) ---
     // Loops, break/continue, patterns, etc. (from Koushik.java)
     // All your commented code and logic is preserved below as reference and for further extension.
-    // ...existing code from Koushik.java...
+
+    /*
+    // while loop example
+    // int counter=1;
+    // while (counter <= 1000){
+    //   System.out.print(counter+" ");
+    //   counter++;
+    // }
+    // Print numbers from 1 to n (user input)
+    // Scanner sc=new Scanner(System.in);
+    // System.out.println("enter a number n:");
+    // int n=sc.nextInt();
+    // int counter=1;
+    // while(counter<=n){
+    //     System.out.println(counter);
+    //     counter++;
+    // }
+    // Sum of first n natural numbers (while loop)
+    // System.out.println("enter n :");
+    // int n=sc.nextInt();
+    // int sum=0,i=1;
+    // while(i<=n){
+    //     sum+=i;
+    //     i++;
+    // }
+    // System.out.println(sum);
+    // Print "Hello world" 100 times (for loop)
+    // for (int i=1;i<=100;i++){
+    //     System.out.println("Hello world");
+    // }
+    // Print a rectangle using asterisks (*), 4 lines
+    // for (int line=1;line<=4;line++){
+    //     System.out.println("* * * *");
+    // }
+    // Printing the last digit of a number
+    // for(int n=345;n>0;n=n/10){
+    //     int last_digit=n %10;
+    //     System.out.print(last_digit);
+    // }
+    // Reversing a number
+    // int rev=0;
+    // for(int number=209;number>0;number=number/10){
+    //     int last_digit=number%10;
+    //     rev=(rev*10)+last_digit;
+    // }
+    // System.out.print(rev);
+    // do-while loop example
+    // int n=1;
+    // do{    //first execution then next condition
+    //     System.out.println("Hello microsoft");
+    //     n++;
+    // }while(n<=10);
+    // break Statement example
+    // int n=1;
+    // do{
+    //     System.out.println(n);
+    //     if(n==3){
+    //         break;
+    //     }
+    //     n++;
+    // }while(n<=5);
+    // System.out.println("You jumped out of the loop");
+    // break on multiple of 10
+    // do{
+    //     System.out.println("enter n value :");
+    //     int n=sc.nextInt();
+    //     System.out.println(n);
+    //     if(n%10==0){
+    //         System.out.println(n+"value is multiple of 10");
+    //         break;
+    //     }
+    // }while(true);
+    // continue statement in for loop
+    // for(int i=1;i<=5;i++){
+    //     if(i==3){
+    //         continue;
+    //     }
+    //     System.out.println(i);
+    // }
+    // continue on multiple of 10
+    // do{
+    //     System.out.println("enter n value :");
+    //     int n=sc.nextInt();
+    //     if(n%10==0){
+    //         // System.out.println(n+"value is multiple of 10");
+    //         continue;
+    //     }
+    //     System.out.println(n);
+    // }while(true);
+    // while(true) with continue
+    // while(true){
+    //     System.out.println("enter n");
+    //     int n=sc.nextInt();
+    //     if(n%10==0){
+    //         continue;
+    //     }
+    //     System.out.println(n);
+    // }
+    // Prime number check (count divisors)
+    // int n=10;
+    // int count=0;
+    // for(int i=1;i<=n;i++){
+    //     if(n%i==0 ){
+    //         count++;
+    //     }
+    // }
+    // if(count==2){
+    //     System.out.println("the number is prime");
+    // }else{
+    //     System.out.println("the number is not prime");
+    // }
+    // Even/Odd sum for n numbers
+    // Scanner sc=new Scanner(System.in);
+    // System.out.println("enter the number of integers you want to enter :");
+    // int n=sc.nextInt();
+    // int evensum=0;
+    // int oddsum=0;
+    // int n1;
+    // for(int i=0;i<n;i++){
+    //     System.out.println("enter the "+i+"number:");
+    //     n1=sc.nextInt();
+    //     if(n1%2==0){
+    //         evensum=evensum+n1;
+    //     }else{
+    //         oddsum=oddsum+n1;
+    //     }
+    // }
+    // System.out.println("even sum is :"+evensum);
+    // System.out.println("odd sum :"+oddsum);
+    // Factorial of a number (user input)
+    // Scanner sc=new Scanner(System.in);
+    // System.out.println("enter the number :");
+    // int n=sc.nextInt();
+    // int fact=1;
+    // for(int i=1;i<=n;i++){
+    //     fact=fact*i;
+    // }
+    // Multiplication table for 2
+    // int n=2;
+    // for(int i=1;i<=10;i++){
+    //     System.out.println(n+"*"+i+"="+n*i);
+    // }
+    */
+
+    // Example method from Koushik.java
+    public static void koushikExample() {
+        System.out.println("koushik");
+        int n = 10;
+        int fact = 1;
+        for (int i = 1; i <= n; i++) {
+            fact = fact * i;
+        }
+        System.out.println(fact);
+    }
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
@@ -409,8 +562,10 @@ public class BasicFundamentals {
         multiplicationTable();
         primeCheck();
         printUpTo5(sc);
+        koushikExample(); // Example from Koushik.java
         // You can add more calls or logic as needed
         sc.close();
     }
 }
 // --- End of BasicFundamentals.java ---
+
