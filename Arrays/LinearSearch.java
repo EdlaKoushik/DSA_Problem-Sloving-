@@ -1,5 +1,7 @@
 
 //linear search is used to find an element in the array
+//time complexity :- best case O(1),avg case O(n/2),worst case O(n)
+//space complexity:- O(1) only one input ,no another variable or extra space we are not using and key,i are considered as constants
 package Arrays;
 
 public class LinearSearch {
