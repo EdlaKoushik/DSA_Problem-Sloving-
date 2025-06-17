@@ -1,3 +1,5 @@
+
+//linear search is used to find an element in the array
 package Arrays;
 
 public class LinearSearch {
