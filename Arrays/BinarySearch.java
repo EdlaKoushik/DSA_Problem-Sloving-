@@ -1,5 +1,14 @@
 // "static void main" must be defined in a public class.
-
+Time Complexity of the binary search will be O(log n)
+    --> n
+        n/2
+        n/4
+        n/....
+         n/2^k=1
+         n/2=k
+         log n base 2=k
+       so Time complexity will be log n--> O(log n)
+    
 import java.util.*;
 public class Main {
     
