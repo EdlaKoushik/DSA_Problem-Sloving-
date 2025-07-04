@@ -1,0 +1,34 @@
+public class Kadanes {
+    public static void kadanesalgo(int nums[]){
+        int mx=Integer.MIN_VALUE;
+        int cs=0;
+       for(int i=0;i<nums.length;i++){
+             cs=cs+nums[i];
+             if(cs<0){
+                cs=0;
+             }
+             mx=Math.max(cs, mx);
+       }
+       System.out.println("the maxium sub array sum is "+mx);
+    }
+     public static void main(String[] args) {
+        int nums[]={1,2,-4,5};
+        kadanesalgo(nums);
+
+     }
+}
+
+
+
+import java.util.*;
+class Solution {
+    public int maxSubArray(int[] nums) {
+        int mx=Integer.MIN_VALUE;
+        int cs=0;
+      for(int i=0;i<nums.length;i++){
+         cs= Math.max(nums[i],cs+nums[i]);
+        mx=Math.max(mx,cs);
+      }
+      return mx;
+    }
+}
